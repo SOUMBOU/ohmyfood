@@ -80,9 +80,4 @@ img{
 }
 
 
-  @media screen and (min-width: 375px){
-    .website{
-      width: 100%;
-      overflow-x: hidden
-    }
-  }
+  
