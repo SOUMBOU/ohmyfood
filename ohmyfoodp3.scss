@@ -28,12 +28,33 @@ a{
   
 }
 .all-restaurants{
-  background-color: rgba(116, 11, 11, 0.993);
+  background-color: rgba(228, 225, 225, 0.993);
+  height: 917px;
+  width: 114px;
 }
 .website{
   min-width: 375px;
 }
-.main{
+.search-place {
+  height: 50px;
+  width: 100%;
+  background-color: $grey-color;
+  display: flex;
+  justify-content: center;
+
+
+  .search-text {
+    height: 43px;
+    width: 228px;
+    border: solid transparent;
+    font-weight: bold;
+    font-size: 1em;
+    align-items: center;
+    
+
+  }
+}
+main{
   width: 100%;
 }
 
