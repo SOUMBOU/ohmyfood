@@ -22,6 +22,13 @@ a {
   text-decoration: none;
   color: black;
 }
+.fa-heart:before {
+  content: "\f004";
+  background: linear-gradient(34deg, #ff79da, #9356dc);
+  object-fit: cover;
+  cursor: pointer;
+  
+}
 .h3-title-function {
   display: flex;
   justify-content: flex-start;
@@ -46,7 +53,7 @@ a {
   font-family: "Shrikhand";
   margin: 0;
   position: relative;
-  right: 25px;
+  right: 35px;
 }
 .filters-container{
   background-color: #f1f1f1;
@@ -227,6 +234,9 @@ ol li::before {
   background-color: rgba(231, 230, 230, 0.993);
   display: flex;
   justify-content: center;
+  align-items: center;
+  padding-left: 60px;
+  font-size: small;
 }
 .search-place .search-text {
   height: 43px;
@@ -242,7 +252,7 @@ ol li::before {
 
 }
 .search-text {
-  text-align: center;
+  padding-left: 15px;
   background-color: rgba(231, 230, 230, 0.993);
 }
 
@@ -309,12 +319,20 @@ img {
   font-family: Arial, Helvetica, sans-serif;
   gap: 5px;
 }
+.fa-utensils:before {
+  content: "\f2e7";
+  padding-right: 16px;
+}
+.fa-hands-helping:before {
+  content: "\f4c4";
+  padding-right: 10px;
+}
 .assist {
   color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.title-2
+
 
 /*# sourceMappingURL=ohmyfoodp3.css.map */
