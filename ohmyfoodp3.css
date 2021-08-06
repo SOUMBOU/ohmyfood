@@ -22,13 +22,32 @@ a {
   text-decoration: none;
   color: black;
 }
-.fa-heart:before {
-  content: "\f004";
-  background: linear-gradient(34deg, #ff79da, #9356dc);
-  object-fit: cover;
+.favorite {
+  /* background: linear-gradient(34deg, #ff79da, #9356dc);
+  object-fit: cover; */
   cursor: pointer;
+  background: linear-gradient(34deg, #ff79da, #9356dc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  left: 290px;
+  top: -36px;
+  font-size: 21px;
   
 }
+
+.favorite-empty  {
+  position: relative;
+  left: 265px;
+  top: -36px;
+  font-size: 21px;
+  color: #b9b7b7; 
+
+}
+.favorite-empty :active{
+  opacity: 0;
+}
+
 .h3-title-function {
   display: flex;
   justify-content: flex-start;
@@ -40,7 +59,7 @@ a {
 .title-1 {
   display: flex;
   justify-content: center;
-  box-shadow: 1px 2px 9px rgb(172 170 170);
+  box-shadow: -2px 2px 9px rgb(172 170 170);
   margin-bottom: 5px;
   margin-top: 0;
   padding-bottom: 7px;
@@ -55,38 +74,26 @@ a {
   position: relative;
   right: 35px;
 }
-.filters-container{
+.filters-container {
   background-color: #f1f1f1;
   padding-bottom: 52px;
 }
-.filters-title{
-  margin:0;
+.filters-title {
+  margin: 0;
   padding-top: 35px;
   display: flex;
   justify-content: center;
   text-align: center;
 }
-.filters-title-1{
-font-size: 1rem;
-color: #9b9696;
-font-weight: normal;
-display: flex;
-justify-content: center;
-text-align: center;
-margin-top: 10px;
-padding-bottom: 10px;
-
-}
-.main-title {
-  height: 90px;
-  background-color: #eeeeee;
+.filters-title-1 {
+  font-size: 1rem;
+  color: #9b9696;
+  font-weight: normal;
   display: flex;
-  justify-content: flex-start;
-  margin-bottom: -40px;
-  padding-top: 40px;
-  position: relative;
-  top: 30px;
-  padding-left: 10px ;
+  justify-content: center;
+  text-align: center;
+  margin-top: 10px;
+  padding-bottom: 10px;
 }
 .button-position {
   display: flex;
@@ -142,12 +149,12 @@ padding-bottom: 10px;
   color: #3e927d;
   font-size: x-small;
 }
-.like-card-establishment{
+.like-card-establishment {
   font-size: 1rem;
   padding-left: 10px;
   margin-bottom: 3px;
 }
-p{
+p {
   padding-left: 10px;
   margin: 0;
 }
@@ -181,7 +188,6 @@ p{
 }
 .menu-color {
   color: black;
-
 }
 
 ol {
@@ -213,11 +219,13 @@ ol li::before {
   left: -8px;
   top: 20px;
 }
-.all-restaurants {
+.restaurants {
   background-color: #eeeeee;
+  padding: 48px 16px 16px 16px;
+}
+.all-restaurants {
   display: flex;
   justify-content: center;
- 
 }
 .all-menu {
   display: flex;
@@ -249,7 +257,6 @@ ol li::before {
 .fa-store:before {
   content: "\f54e";
   color: #9356dc;
-
 }
 .search-text {
   padding-left: 15px;
@@ -287,6 +294,11 @@ img {
   height: 100%;
   object-fit: cover;
   cursor: pointer;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .restaurant-card {
@@ -327,12 +339,12 @@ img {
   content: "\f4c4";
   padding-right: 10px;
 }
+
 .assist {
   color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-
 
 /*# sourceMappingURL=ohmyfoodp3.css.map */
