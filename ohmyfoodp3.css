@@ -30,9 +30,9 @@ a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   position: relative;
-  left: 290px;
-  top: -36px;
-  font-size: 21px;
+  right: -285px;
+  bottom: 40px;
+  font-size: 11px;
   transform: scale(0);
 }
 
