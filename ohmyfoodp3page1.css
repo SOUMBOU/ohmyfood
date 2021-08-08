@@ -87,10 +87,12 @@ body {
     background: linear-gradient(34deg, #ff79da, #9356dc);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 21px;
+    font-size: 11px;
     position: relative;
-    right: 8px;
-    top: 19px;
+    right: 13px;
+    top: 15px;
+    transform: scale(0);
+    
   }
   
   .favorite-empty  {
@@ -100,10 +102,18 @@ body {
     position: relative;
     right: 33px;
     top: 19px;
-  
- 
+    transform: scale(1);
+    
+
   }
-  
+  .heart:hover .favorite{
+      transform: scale(2);
+      transition-property: all;
+      transition: 700ms;
+  }
+  .heart:hover .favorite-empty{
+  transform: scale(0);
+  }
   .h3-title-function {
     display: flex;
     justify-content: flex-start;

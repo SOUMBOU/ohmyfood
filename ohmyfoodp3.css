@@ -33,7 +33,7 @@ a {
   left: 290px;
   top: -36px;
   font-size: 21px;
-  
+  transform: scale(0);
 }
 
 .favorite-empty  {
@@ -42,10 +42,16 @@ a {
   top: -36px;
   font-size: 21px;
   color: #b9b7b7; 
+  transform: scale(1);
 
 }
-.favorite-empty :active{
-  opacity: 0;
+.heart:hover .favorite{
+  transform: scale(2);
+  transition-property: all;
+  transition: 700ms;
+}
+.heart:hover .favorite-empty{
+transform: scale(0);
 }
 
 .h3-title-function {
