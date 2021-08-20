@@ -216,6 +216,7 @@ body {
   }
   
   .restaurant-card-informations:hover .circle-valid {
+    animation-delay: 600ms;
     transform: rotate(360deg);
   }
   
