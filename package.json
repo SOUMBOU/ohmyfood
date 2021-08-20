@@ -1,0 +1,18 @@
+{
+  "name": "oh_my_food",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "compile:css": "sass --watch ohmyfoodp3.scss:dist/ohmyfoodp3.css ohmyfoodp3page1.scss:dist/ohmyfoodp3page1.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SOUMBOU/ohmyfood.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://github.com/SOUMBOU/ohmyfood#readme",
+  "dependencies": {
+    "sass": "^1.38.0"
+  }
+}
