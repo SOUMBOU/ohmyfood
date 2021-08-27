@@ -218,19 +218,26 @@ header {
   }
 }
 .restauration-card-goup {
-  animation: menu-apparition 1400ms;
+  animation: card-apparition 1400ms;
 }
 
-.restaurant-card-informations-1:nth-of-type(1) {
+.restaurant-card-informations:nth-of-type(1) {
   animation-delay: 200ms;
+  transform: translateY(7px);
+  opacity: 0;
 }
 
-.restaurant-card-informations-2:nth-of-type(2) {
+.restaurant-card-informations:nth-of-type(2) {
   animation-delay: 400ms;
+  transform-origin: duration 1000ms;
+  transform: translateY(7px);
+  opacity: 0;
 }
 
-.restaurant-card-informations-3:nth-of-type(3) {
+.restaurant-card-informations:nth-of-type(3) {
   animation-delay: 600ms;
+  transform: translateY(7px);
+  opacity: 0;
 }
 
 .valid-menu {
@@ -246,50 +253,18 @@ header {
   margin-left: 5px;
 }
 
-.restaurant-card-informations-1:hover .valid-menu {
+.restaurant-card-informations:hover .valid-menu {
   transform: translate(0px);
   max-width: 200px;
 }
 
-.restaurant-card-informations-2:hover .valid-menu {
-  transform: translate(0px);
-  max-width: 200px;
-}
-
-.restaurant-card-informations-3:hover .valid-menu {
-  transform: translate(0px);
-  max-width: 200px;
-}
-
-.restaurant-card-informations-1 .circle-valid {
+.restaurant-card-informations .circle-valid {
   transform: rotate(0);
   transition: transform 500ms;
   padding-top: 18px;
 }
 
-.restaurant-card-informations-2 .circle-valid {
-  transform: rotate(0);
-  transition: transform 500ms;
-  padding-top: 18px;
-}
-
-.restaurant-card-informations-3 .circle-valid {
-  transform: rotate(0);
-  transition: transform 500ms;
-  padding-top: 18px;
-}
-
-.restaurant-card-informations-1:hover .circle-valid {
-  animation-delay: 600ms;
-  transform: rotate(360deg);
-}
-
-.restaurant-card-informations-2:hover .circle-valid {
-  animation-delay: 600ms;
-  transform: rotate(360deg);
-}
-
-.restaurant-card-informations-3:hover .circle-valid {
+.restaurant-card-informations:hover .circle-valid {
   animation-delay: 600ms;
   transform: rotate(360deg);
 }
@@ -301,7 +276,7 @@ p {
   color: #504f4f;
 }
 
-.restaurant-card-informations-1 {
+.restaurant-card-informations {
   background-color: #f9faf9;
   border-radius: 14px;
   box-shadow: 5px 5px 10px #d4d3d3;
@@ -311,17 +286,7 @@ p {
   width: 100%;
 }
 
-.restaurant-card-informations-2 {
-  background-color: #f9faf9;
-  border-radius: 14px;
-  box-shadow: 5px 5px 10px #d4d3d3;
-  display: flex;
-  margin: 10px;
-  overflow: hidden;
-  width: 100%;
-}
-
-.restaurant-card-informations-3 {
+.restaurant-card-informations {
   background-color: #f9faf9;
   border-radius: 14px;
   box-shadow: 5px 5px 10px #d4d3d3;
