@@ -209,35 +209,31 @@ header {
   margin-right: auto;
 }
 
-@keyframes menu-apparition {
+@keyframes card-apparition {
   from {
+    transform: translateY(0px);
     opacity: 0;
   }
   to {
     opacity: 1;
+    transform: translateY(-8px);
   }
 }
-.restauration-card-goup {
-  animation: card-apparition 1400ms;
+.restauration-card-group .restaurant-card-informations {
+  animation: card-apparition 3000ms;
+  animation-fill-mode: both;
 }
 
 .restaurant-card-informations:nth-of-type(1) {
   animation-delay: 200ms;
-  transform: translateY(7px);
-  opacity: 0;
 }
 
 .restaurant-card-informations:nth-of-type(2) {
   animation-delay: 400ms;
-  transform-origin: duration 1000ms;
-  transform: translateY(7px);
-  opacity: 0;
 }
 
 .restaurant-card-informations:nth-of-type(3) {
   animation-delay: 600ms;
-  transform: translateY(7px);
-  opacity: 0;
 }
 
 .valid-menu {
@@ -453,24 +449,5 @@ img {
 }
 
 /*# sourceMappingURL=ohmyfoodp3.css.map */
-@keyframes menu-apparition {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-.menu {
-  animation: menu-apparition 400ms;
-}
-
-.menu:nth-of-type(1) {
-  animation-delay: 200ms;
-}
-
-.menu:nth-of-type(2) {
-  animation-delay: 400ms;
-}
 
 /*# sourceMappingURL=ohmyfoodp3page1.css.map */

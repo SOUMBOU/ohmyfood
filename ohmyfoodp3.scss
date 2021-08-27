@@ -29,22 +29,32 @@ a {
 
   to{
     opacity: 0;
+    visibility: hidden;
+    transform: scale(0);
   }
 }
-.spinner{
-  animation-delay: 300ms;
+
+.spinner {
+  animation: spinner-duration 3000ms;
+  animation-fill-mode: 300ms;
+  transform: scale(0);
 }
 .spinner {
-background-color: #9356dc;
-position: absolute;
+background-color: white;
+position: fixed;
 width: 100%;
 height: 100%;
-opacity: 1;
+opacity: 0.7;
+z-index: 1;
+display: flex;
+justify-content: center;
+
+
 }
 .spinner-loading {
-  justify-content: center;
+  
 }
-}
+
 .favorite {
   /* background: linear-gradient(34deg, #ff79da, #9356dc);
   object-fit: cover; */
