@@ -24,34 +24,29 @@ a {
 }
 @keyframes spinner-duration {
   from {
-    opacity: 1
+    opacity: 1;
+    transform: scale(1);
   }
 
-  to{
+  to {
     opacity: 0;
-    visibility: hidden;
     transform: scale(0);
   }
 }
 
 .spinner {
-  animation: spinner-duration 3000ms;
-  animation-fill-mode: 300ms;
-  transform: scale(0);
-}
-.spinner {
-background-color: white;
-position: fixed;
-width: 100%;
-height: 100%;
-opacity: 0.7;
-z-index: 1;
-display: flex;
-justify-content: center;
-
-
-}
-.spinner-loading {
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  animation: spinner-duration 400ms;
+  animation-delay: 300ms;
+  animation-fill-mode: forwards;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
   
 }
 
