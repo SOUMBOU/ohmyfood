@@ -55,15 +55,15 @@ a {
   background: linear-gradient(34deg, #ff79da, #9356dc);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  position: relative;
-  left: 290px;
+  position: absolute;
+  right: 15px;
   top: -36px;
   font-size: 21px;
 }
 
 .favorite-empty {
-  position: relative;
-  left: 265px;
+  position: absolute;
+  right: 15px;
   top: -36px;
   font-size: 21px;
   color: #b9b7b7;
@@ -297,7 +297,7 @@ ol li::before {
 
 .search-place .search-text {
   height: 43px;
-  width: 228px;
+  width: 100%;
   border: solid transparent;
   font-weight: bold;
   font-size: 1em;
@@ -335,7 +335,7 @@ footer .title:hover {
 
 .footer-assist {
   display: flex;
-  width: 375px;
+  width: 100%;
   margin-top: 62px;
   padding-top: 28px;
   padding-bottom: 34px;
@@ -355,7 +355,7 @@ img {
 }
 
 .restaurant-card {
-  width: 335px;
+  width: 100%;
   height: 250px;
   margin: 16px;
   border-radius: 25px;

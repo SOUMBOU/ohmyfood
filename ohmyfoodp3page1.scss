@@ -101,18 +101,18 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 11px;
-    position: relative;
-    right: 13px;
-    top: 15px;
+    position: absolute;
+    right: 34px;
+    top: 24px;
     transform: scale(0);
   }
   
   .favorite-empty {
     font-size: 21px;
     color: #b9b7b7;
-    position: relative;
-    right: 33px;
-    top: 19px;
+    position: absolute;
+    right: 29px;
+    top: 21px;
     transform: scale(1);
   }
   .heart:hover .favorite {
@@ -131,6 +131,15 @@ body {
     padding-bottom: 8px;
     margin-left: 33px;
   }
+  .arrow{
+    display: flex;
+    position: relative;
+    left: 26px;
+    top: 26px;
+  }
+  .image-toa-heftiba{
+    height: 180px;
+  }
   .title-1 {
     display: flex;
     justify-content: center;
@@ -138,7 +147,7 @@ body {
     margin-top: 0;
     padding-bottom: 7px;
     padding-top: 15px;
-    width: 10px;
+    width: 100%;
   }
   .title-2 {
     display: flex;
@@ -322,7 +331,6 @@ body {
     font-family: "Shrikhand";
     margin: 0;
     margin-left: 10px;
-    width: 140px;
     padding-top: 21px;
   }
   .price {
@@ -381,7 +389,7 @@ body {
   
   .footer-assist {
     display: flex;
-    width: 375px;
+    width: 100%;
     margin-top: 62px;
     padding-top: 28px;
     padding-bottom: 34px;
