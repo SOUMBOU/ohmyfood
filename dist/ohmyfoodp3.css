@@ -281,7 +281,7 @@ ol li::before {
 }
 
 .website {
-  min-width: 320px;
+  min-height: auto;
 }
 
 .search-place {
@@ -336,10 +336,7 @@ footer .title:hover {
 .footer-assist {
   display: flex;
   width: 100%;
-  margin-top: 62px;
   padding-top: 28px;
-  padding-bottom: 34px;
-  margin: 0 auto;
 }
 
 img {
