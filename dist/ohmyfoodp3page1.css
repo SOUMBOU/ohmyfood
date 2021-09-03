@@ -103,27 +103,32 @@ header {
   right: -11px;
 }
 
+.heart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 18px;
+  top: 22px;
+  width: 22px;
+  height: 22px;
+}
+
 .favorite {
-  /* background: linear-gradient(34deg, #ff79da, #9356dc);
-    object-fit: cover; */
   cursor: pointer;
   background: linear-gradient(34deg, #ff79da, #9356dc);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 11px;
-  position: absolute;
-  right: 34px;
-  top: 24px;
   transform: scale(0);
+  position: absolute;
 }
 
 .favorite-empty {
-  font-size: 21px;
+  font-size: 22px;
   color: #b9b7b7;
-  position: absolute;
-  right: 29px;
-  top: 21px;
   transform: scale(1);
+  position: absolute;
 }
 
 .heart:hover .favorite {
@@ -209,11 +214,15 @@ header {
   margin-bottom: 3px;
   margin-top: 10px;
   display: flex;
-  width: 250px;
+  min-width: 150px;
+}
+
+.size-text {
+  flex: 1;
 }
 
 .like-observe {
-  margin: auto;
+  flex: 1;
 }
 
 .restaurant-card-informations-titre {
