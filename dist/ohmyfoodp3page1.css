@@ -215,10 +215,20 @@ header {
   margin-top: 10px;
   display: flex;
   min-width: 150px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.like-card-menu-description {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .size-text {
   flex: 1;
+  width: 250px;
 }
 
 .restaurant-card-informations-titre {
@@ -252,6 +262,10 @@ header {
   animation-delay: 600ms;
 }
 
+.restaurant-card-informations:nth-of-type(4) {
+  animation-delay: 800ms;
+}
+
 .valid-menu {
   /* overflow: hidden; */
   background-color: #98e4c7;
@@ -268,6 +282,7 @@ header {
 .restaurant-card-informations:hover .valid-menu {
   transform: translate(0px);
   max-width: 200px;
+  text-overflow: ellipsis;
 }
 
 .restaurant-card-informations .circle-valid {
